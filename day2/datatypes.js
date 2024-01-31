@@ -64,16 +64,38 @@
 
 // -------------------------------------------------------------------------
 
-let book101Array = ['Harry Potter', 200, 500.50, 'J.K. Rowling', true];
+// let book101Array = ['Harry Potter', 200, 500.50, 'J.K. Rowling', true];
 
-// Javascript Object Notation (JSON)
-let book101 = {
-    title: 'Harry Potter',
-    noOfPages: 200,
-    price: 500.50,
-    author: 'J.K. Rowling',
-    isAvailable: true
-} 
+// // Javascript Object Notation (JSON)
+// let book101 = {
+//     title: 'Harry Potter',
+//     noOfPages: 200,
+//     price: 500.50,
+//     author: 'J.K. Rowling',
+//     isAvailable: true
+// } 
 
-console.log(book101);
-console.log('type:', typeof(book101));
+// console.log(book101);
+// console.log('type:', typeof(book101));
+
+// -------------------------------------------------------------------------
+
+// let name;
+
+// console.log(name);
+
+// let name = null;
+
+// console.log(name);
+// console.log('type:', typeof(name));
+
+// let name = NaN;
+
+// console.log(name);
+// console.log('type:', typeof(name));
+
+// example for NaN
+
+let result = 10 / 'a';
+
+console.log(result);
