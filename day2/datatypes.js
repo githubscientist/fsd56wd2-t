@@ -12,6 +12,18 @@
     
     3. Boolean
         - true or false
+    
+    4. Object
+        - Arrays
+            - to store multiple values in a single variable.
+            - list of comma separated values enclosed in square brackets.
+            - example: [1, 2, 3, 4, 5]
+            - but in js, an array type is object.
+        - JS Object
+    
+    5. Undefined
+    6. Null
+    7. NaN
 
     - To check the type of data we can use typeof function.
 */
@@ -37,8 +49,31 @@
 
 // -------------------------------------------------------------------------
 
-let age = 25;
-let isEligibleToVote = false;
+// let age = 25;
+// let isEligibleToVote = false;
 
-console.log(isEligibleToVote);
-console.log('type:', typeof(isEligibleToVote));
+// console.log(isEligibleToVote);
+// console.log('type:', typeof(isEligibleToVote));
+
+// -------------------------------------------------------------------------
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers);
+// console.log('type:', typeof(numbers));
+
+// -------------------------------------------------------------------------
+
+let book101Array = ['Harry Potter', 200, 500.50, 'J.K. Rowling', true];
+
+// Javascript Object Notation (JSON)
+let book101 = {
+    title: 'Harry Potter',
+    noOfPages: 200,
+    price: 500.50,
+    author: 'J.K. Rowling',
+    isAvailable: true
+} 
+
+console.log(book101);
+console.log('type:', typeof(book101));
