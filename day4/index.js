@@ -1,46 +1,27 @@
-/*
-    XHR: XML Http Request
+// using let -> block level scope
+// {
+//     let x = 10; // x has block scope
+//     console.log(x);
+// }
 
-    - XMLHttpRequest
-    - To make a request to the server
+// console.log(x); // error: x is not defined
 
-    Steps:
+// // using var -> function level scope
+// {
+//     var x = 10; // x has function scope
+//     console.log(x);
+// }
 
-    1. Install xhr2 package
+// console.log(x); // 10
 
-    Open the terminal in the same directory as the index.js file and run the following command:
-    npm install xhr2
+// hoisting
 
-    2. Require the xhr2 package (to import the package)
-    let XMLHttpRequest = require('xhr2');
+x = 10;
+console.log(x);
 
-    3. Create an object to the XMLHttpRequest class constructor
-    let xhr = new XMLHttpRequest();
+var x; // because of hoisting, x is declared at the top of the scope
 
-    4. Open a new connection to the server
-    xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/');
+// x = 10;
+// console.log(x);
 
-    5. Send the request to the server
-    xhr.send(); // this will send the request to the server
-*/
-
-
-
-let XMLHttpRequest = require('xhr2');
-
-// create an object to the XMLHttpRequest class constructor
-let xhr = new XMLHttpRequest();
-
-// open a new connection to the server
-xhr.open('GET', 'https://restcountries.com/v3.1/all');
-
-xhr.send(); // this will send the request to the server
-
-// listen for the 'load' event
-// to handle the response from the server
-// this event is triggered when the response is received from the server
-xhr.onload = function () {
-    let countries = JSON.parse(xhr.responseText);
-
-    console.log(countries[0].flag);
-}
+// let x;
