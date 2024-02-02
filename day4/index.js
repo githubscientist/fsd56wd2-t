@@ -32,7 +32,7 @@ let XMLHttpRequest = require('xhr2');
 let xhr = new XMLHttpRequest();
 
 // open a new connection to the server
-xhr.open('GET', 'https://jsonplaceholder.typicode.com/users/');
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
 
 xhr.send(); // this will send the request to the server
 
@@ -40,9 +40,7 @@ xhr.send(); // this will send the request to the server
 // to handle the response from the server
 // this event is triggered when the response is received from the server
 xhr.onload = function () {
-    let users = JSON.parse(xhr.responseText);
+    let countries = JSON.parse(xhr.responseText);
 
-    for (let user of users) {
-        console.log(user.name);
-    }
+    console.log(countries[0].flag);
 }
