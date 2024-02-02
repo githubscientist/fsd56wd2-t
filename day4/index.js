@@ -1,27 +1,19 @@
-/* 
-
-    JSON: JavaScript Object Notation
-
-    - represented as key-value pairs
-
-*/
-
-// let person = [
-//     'sathish',
-//     35,
-//     true,
-//     ['reading', 'coding', 'travelling'],
-// ];
-
-// console.log(person[3][2]); // gets the person's age
+// JSON String
 
 let person = {
-    name: 'sathish',
-    age: 35,
-    isMarried: true,
-    hobbies: ['reading', 'coding', 'travelling'],
-}
+    name: "John",
+    age: 30,
+    city: "New York"
+};
 
-console.log(person['hobbies']);
+// console.log(JSON.stringify(person)); // {"name":"John","age":30,"city":"New York"}
 
-// console.log(person.hobbies[0]);
+// console.log(person["name"]);
+
+let JSONString = '{"name":"John","age":30,"city":"New York"}';
+
+// console.log(JSONString.split(',')[0].split('{')[1]);
+
+let JSONObject = JSON.parse(JSONString);
+
+console.log(JSONObject["name"]);
