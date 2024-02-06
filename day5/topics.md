@@ -1,3 +1,8 @@
+Doubts:
+
+- Palindrome
+- String Reverse
+
 Day - 5: ES5 vs ES6
 
 var vs let vs const
