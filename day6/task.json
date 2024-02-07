@@ -1,0 +1,9 @@
+{
+    "name": "dsa",
+    "author": "sathish",
+    "price": 2325.12,
+    "noOfPages": 30,
+    "isAvailable": true,
+    "noOfCopies": 20,
+    "genres": ["maths", "science", "history"]
+}
