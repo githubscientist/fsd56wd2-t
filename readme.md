@@ -1,9 +1,6 @@
-Day -6: OOP in JS
+Day -7: Array methods
 
-Understanding the basics of prototype
-What is classes in js?
-constructor
-need of setters/getters
-use of this key word in classes
+Map, Reduce, Filter
+Other array methods practiced in the session
 
-Task: https://docs.google.com/document/d/1ckh6RegMhmyBwqbbtYHygA8Y0Q10TqHW8fkjX0ZPw3g/edit
+Task: https://docs.google.com/document/d/1iza9j-P6zsN0gZ9ZVuNH0lMxdUeuAYfaGMPvyWL_IcY/edit?usp=sharing
