@@ -19,7 +19,7 @@ class Student {
     //     return filteredStudents;
     // }
 
-    getStudentsByCourse(students, course) {
+    static getStudentsByCourse(students, course) {
         return students.filter(student => student.course === course);
     }
 }
@@ -37,6 +37,4 @@ students.push(
     new Student('john', 'john@gmail.com', 'CS')
 );
 
-let studentB = new Student('admin', 'admin@gmail.com', 'MGT');
-
-console.log(studentB.getStudentsByCourse(students, 'CS'));
+console.log(Student.getStudentsByCourse(students, 'CS'));
