@@ -1,6 +1,31 @@
-Day -7: Array methods
+HTML- Day -1: HTML
 
-Map, Reduce, Filter
-Other array methods practiced in the session
+Contents:
+[x] What is HTML & Why use it?
 
-Task: https://docs.google.com/document/d/1iza9j-P6zsN0gZ9ZVuNH0lMxdUeuAYfaGMPvyWL_IcY/edit?usp=sharing
+    - HTML: Hyper Text Markup Language
+    - To create a web page
+
+[x] Basic Tags
+
+    a. Headings
+    b. Paragraphs
+    c. Links
+    d. Images
+    e. Lists
+    f. Tables
+
+[] HTML vs HTML5
+[] div vs section vs article
+[] div vs span
+[] inline vs block elements
+[] HTML Forms
+[] Input elements and attributes
+[] Form submit
+
+[] Session Practice task URL:
+https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md
+
+Pre-read:
+https://developer.mozilla.org/en-US/docs/Web/HTML
+https://html.spec.whatwg.org/multipage/
