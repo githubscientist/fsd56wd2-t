@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML FORMS</title>
+    </head>
+    <body>
+        <header id="header">
+            <p><a href="./index.html">
+                    < Back to Home</a>
+            </p>
+            
+            <p>Please fill the below form. Someone from our team will get in touch with you shortly.</p>
+        </header>
+
+        <!-- 
+            label tag is used to provide a label for the input field. We will not see any visual difference in the output, but it will help the screen readers to understand the purpose of the input field. It will improve the accessibility of the form.
+        -->
+
+        <form method="get">
+            <div>
+                <label for="firstName">Name: <span style="color: red;">*</span></label>
+                <input type="text" placeholder="First Name..." id="firstName" name="firstName" />
+                <input type="text" placeholder="Last Name..." name="lastName" />
+            </div>
+            <br />
+            <div>
+                <label>Email: </label>
+                <input type="email" name="email"/>
+            </div>
+
+            <br />
+
+            <div>
+                <label>
+                    Password:
+                    <input 
+                        type="password"
+                        name="password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}"
+                    />
+                </label>
+            </div>
+
+            <br />
+            <label>
+                Gender: 
+                <label>
+                    <input type="radio" name="gender" value="m" />
+                    Male
+                </label>
+                
+                <label>
+                    <input type="radio" name="gender" value="f" />
+                    Female
+                </label>
+            </label>
+
+            <br />
+            <label>
+                Hobbies:
+                <label>
+                    <input type="checkbox" name="hobbies" value="reading" />
+                    Reading
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="writing" />
+                    Writing
+                </label>  
+                <label>
+                    <input type="checkbox" name="hobbies" value="coding" />
+                    Coding
+                </label>
+            </label>
+
+            <button>Click Me</button>
+
+            <input 
+                type="color"
+            />
+
+            <input 
+                type="datetime-local"
+            />
+
+            <input 
+                type="file"
+                accept="image/*"
+            />
+
+            <select>
+                <option>
+                    India
+                </option>
+                <option>
+                    USA
+                </option>
+            </select>
+
+            <br />
+            <input 
+                type="submit"
+            />
+
+            <input 
+                type="reset"
+            />
+        </form>
+    </body>
+</html>
