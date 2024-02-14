@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>XHR - Task</title>
+        <title>My First HTML Page</title>
+
+        <!-- internal styles -->
+        <style>
+            /* rule sets */
+            /* tag selector */
+            p {
+                /* property:value */
+                color: blue;
+            }
+
+            h3 {
+                color: red;
+            }
+        </style>
+
     </head>
+
     <body>
-        
+        <!-- inline styles -->
+        <h1 style="width: 100%; background-color: green;">
+            <img src="../assets/guvi-logo.webp" width="150px" alt="Guvi Logo" />
+        </h1>
+
+        <p>GUVI is an IIT-M & IIM-A incubated Ed-tech company that focuses on providing personalized learning solutions for
+            its
+            learners right from online learning, ...</p>
+
+        <p>For more details about Guvi, please visit our website
+            <a href="https://www.guvi.in" target="_blank">
+                here
+            </a>
+        </p>
+
+        <h3>List of Courses:</h3>
+        <ul type="square">
+            <li>MERN FSD</li>
+            <ul>
+                <li>Frontend</li>
+                <li>Backend</li>
+            </ul>
+            <li>MEAN FSD</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Machine Learning</li>
+        </ul>
+
+        <h3>Features:</h3>
+        <!-- ordered list -->
+        <ol type="1">
+            <li>Codekata</li>
+            <ol type="a">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+            <li>Webkata</li>
+            <li>Placement Training</li>
+            <li>Internship</li>
+        </ol>
+
+        <h3>Placements & Companies</h3>
+        <!-- table -->
+        <table border="1" cellpadding="10" style="border-collapse: collapse;">
+            <tr>
+                <th rowspan="2">S.NO</th>
+                <th rowspan="2">Company Name</th>
+                <th colspan="2">Package</th>
+            </tr>
+
+            <tr>
+                <th>Min</th>
+                <th>Max</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Google</td>
+                <td>10 LPA</td>
+                <td>50 LPA</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Microsoft</td>
+                <td>9 LPA</td>
+                <td>40 LPA</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Amazon</td>
+                <td>8 LPA</td>
+                <td>36 LPA</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Facebook</td>
+                <td>7 LPA</td>
+                <td>28 LPA</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Infosys</td>
+                <td>6 LPA</td>
+                <td>20 LPA</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>TCS</td>
+                <td>5 LPA</td>
+                <td>18 LPA</td>
+            </tr>
+        </table>
+
+        <h3>Session Tasks:</h3>
+        <ul>
+            <li><a href="">Task4</a></li>
+            <li><a href="">Task8</a></li>
+        </ul>
+
+        <p>Contact Us <a href="">here</a></p>
     </body>
+
 </html>
