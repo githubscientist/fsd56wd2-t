@@ -11,24 +11,24 @@
 [x] ways to use CSS
 
     [x] inline
-    [] internal
-    [] external
+    [x] internal
+    [x] external
 
 [x] property & value  
 [] selectors
 
-        - element selector / tag selector
-        - id selector
-        - class selector
+        [x] element selector / tag selector
+        [x] id selector
+        [x] class selector
         - group selector
         - universal selector
         - attribute selector
         - pseudo-class selector
         - pseudo-element selector
 
-[] class vs id  
-[] use of important  
-[] display property: inline, block
+[x] class vs id  
+[x] use of important  
+[x] display property: inline, block
 
 Pre-read:
 

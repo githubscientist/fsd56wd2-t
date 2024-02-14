@@ -1,0 +1,40 @@
+table tr th {
+    color: blueviolet;
+}
+
+h1 {
+    background-color: grey !important;
+}
+
+#placementTable td {
+    color:chocolate;
+}
+
+/*
+    Precedence of CSS:
+
+    1. Inline CSS
+    2. Internal CSS
+    3. ID selectors
+    4. Class selectors
+    5. Element selectors / Tag selectors
+    6. External CSS
+    7. Universal selectors
+*/
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+}
+
+img {
+    display: block;
+}
