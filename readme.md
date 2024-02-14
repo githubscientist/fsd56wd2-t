@@ -1,6 +1,6 @@
 HTML- Day -1: HTML
 
-![Visit Website](./day8/frontend/src/index.html)
+[Visit Website](./day8/frontend/src/index.html)
 
 Contents:
 [x] What is HTML & Why use it?
