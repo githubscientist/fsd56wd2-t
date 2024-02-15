@@ -3,7 +3,7 @@
 **Contents:**
 
 [x] Intro to pseudo-classes (link, visited,hover, active)
-[] box model: padding, margin, border
+[x] box model: padding, margin, border
 [] Grid
 [] Flex - display, direction, wrap, flex-flow, justify-content, align-content
 [] position property: fixed, static, relative, absolute, sticky
