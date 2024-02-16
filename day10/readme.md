@@ -4,8 +4,8 @@
 
 [x] Intro to pseudo-classes (link, visited,hover, active)
 [x] box model: padding, margin, border
+[x] Flex - display, direction, wrap, flex-flow, justify-content, align-content
 [] Grid
-[] Flex - display, direction, wrap, flex-flow, justify-content, align-content
 [] position property: fixed, static, relative, absolute, sticky
 [] parent inherit
 [] gradient

@@ -190,3 +190,101 @@ h2 {
 
     margin: 20px 10px;
 }
+
+/*
+    flex
+
+    - it is a one-dimensional layout method for laying out items in rows or columns
+    - it can be used to create a responsive page layout
+    - it can be used to create a navigation menu, a sidebar, a header, a footer, or any other layout
+    - it can be used to resize, hide, shrink, or enlarge a space, distribute space between items, align items, and vertically center items.
+*/
+
+body {
+    margin: 10px;
+}
+
+/* Navigation menu styles */
+/* .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.menu li {
+    margin: 0 5px;
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+}
+
+.menu li:hover {
+    background-color: lightgrey;
+} */
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    padding: 0;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* aligns items to the center horizontally */
+    /* justify-content: center;  */
+
+    /* aligns items to the center vertically */
+    /* align-items: center; */
+    /* justify-content: center; */ /* aligns items to the center horizontally */
+    /* align-items: center; */ /* aligns items to the center vertically */
+    /* flex-wrap: wrap; */
+
+    /* short hand property for flex wrap and flex direction */
+    flex-flow: row wrap;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li {
+    margin: 0 5px;
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+}
+
+.menu li:hover {
+    background-color: lightgrey;
+}
+
+/* child items styles */
+
+.home {
+    order: 1;
+    /* flex-grow:2; */
+    /* flex-shrink: 2; */
+    flex-grow: 1;
+}
+
+.services {
+    order: 3;
+    flex-grow:1;
+}
+
+.contact {
+    order: 2;
+    flex-grow: 1;
+}
+
+.about {
+    order: 4;
+    flex-grow: 1;
+}
