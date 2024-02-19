@@ -8,7 +8,7 @@
 
 **Doubts:**
 
-[] flex - justify content, align items
+[x] flex - justify content, align items
 
 ### Day -4: HTML & CSS
 

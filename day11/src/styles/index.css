@@ -1,19 +1,35 @@
 .container {
-    height: 500px;
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "sidebar main main main"
+        "footer footer footer footer";
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
 }
 
-.container > div {
-    height: 10px;
-    margin: 10px;
+.header {
+    grid-area: header;
     padding: 20px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #333;
-    background-color: #f0f0f0;
+    background-color: blue;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+    background-color: green;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    background-color: yellow;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    background-color: red;
 }
