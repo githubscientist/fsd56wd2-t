@@ -7,7 +7,7 @@
 fixed: fixed position with respect to the viewport. It does not move when the page is scrolled.
 
 [x] parent inherit
-[] gradient
+[x] gradient
 
 **Doubts:**
 

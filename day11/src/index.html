@@ -6,36 +6,24 @@
         <title>Parent Inherit</title>
         <link rel="stylesheet" href="./styles/index.css">
 
-        <style>
-            .parent {
-                background-color: lightgray;
-                font-family: 'Courier New', Courier, monospace;
-                padding: 20px;
-            }
-
-            .child {
-                background-color: lightblue;
-                padding: 30px;
-            }
-
-            .grandchild {
-                background-color: lightgreen;
-                padding: inherit;
-            }
-        </style>
-
     </head>
     <body>
-        <div class="parent">
-            <p>This is the parent element</p>
+        <div class="content">
 
-            <div class="child">
-                <p>This is the child element</p>
-
-                <div class="grandchild">
-                    <p>This is the grandchild element</p>
-                </div>
-            </div>
         </div>
+
+        <style>
+            .content {
+                width: 100%;
+                height: 250px;
+                /* background: linear-gradient(to right, blue, green); */
+                /* background: linear-gradient(to left, blue, green); */
+                /* background: linear-gradient(60deg, blue, green); */
+                /* background: linear-gradient(60deg, blue 20%, red 30%, green 50%); */
+                /* background: radial-gradient(circle, blue, red, green); */
+                /* background: radial-gradient(ellipse, blue, red, green); */
+                background: radial-gradient(ellipse, blue, red, green);
+            }
+        </style>
     </body>
 </html>
