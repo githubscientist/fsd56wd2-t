@@ -3,12 +3,16 @@
 **Contents:**
 
 [] position property: fixed, static, relative, absolute, sticky
+
+fixed: fixed position with respect to the viewport. It does not move when the page is scrolled.
+
 [] parent inherit
 [] gradient
 
 **Doubts:**
 
 [x] flex - justify content, align items
+[x] grid - grid template areas
 
 ### Day -4: HTML & CSS
 
