@@ -6,6 +6,10 @@
 [] parent inherit
 [] gradient
 
+**Doubts:**
+
+[] flex - justify content, align items
+
 ### Day -4: HTML & CSS
 
 **Contents:**
