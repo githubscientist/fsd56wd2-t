@@ -2,7 +2,7 @@
 
 **Contents:**
 
-[] position property: fixed, static, relative, absolute, sticky
+[x] position property: fixed, static, relative, absolute, sticky
 
 fixed: fixed position with respect to the viewport. It does not move when the page is scrolled.
 

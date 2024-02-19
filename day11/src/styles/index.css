@@ -28,3 +28,47 @@
 .menu li a{
     color: #fff;
 }
+
+/* Positioning properties */
+
+header {
+    position: fixed;
+    top: 25px;
+}
+
+main {
+    margin-top: 75px;
+}
+
+.title {
+    position: sticky;
+    top: 75px;
+}
+
+/* above: fixed and sticky */
+
+/* .image {
+    position: absolute;
+} */
+
+/* .description {
+    position: relative;
+} */
+
+.content {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* takes the image out of the normal flow of the document */
+.image {
+    position: absolute;
+    left: 0;
+}
+
+/* sets the element relative to the normal flow of the document */
+.description {
+    position: relative;
+    margin-left: 500px;
+}
+
