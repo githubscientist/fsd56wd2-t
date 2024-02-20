@@ -46,9 +46,9 @@ sticky:
 
 **Contents:**
 
-[] overflow - hidden, scroll, auto, visible  
-[] dropbox  
+[x] overflow - hidden, scroll, auto, visible
 [] measurements  
 [] fonts  
 [] icons  
 [] media query
+[] dropbox

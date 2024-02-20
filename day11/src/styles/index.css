@@ -1,32 +1,55 @@
-/* basic styling */
-.box {
-    border: 3px dotted red;
+button {
+    color: white;
+    padding: 14px 50px;
+    margin: 8px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    /* font-size: 16px; */
+}
+
+.button1 {
+    width: 300px;
+    background-color: green;
+}
+
+.button2 {
     width: 200px;
-    height: 100px;
+    background-color: blue;
 }
 
-div {
-    margin: 200px 0px;
+html {
+    font-size: 20px;
 }
 
-body > div:first-child {
-    margin: 0px;
+.button3{
+    /* width: 146px; */
+    /* width: 200px; */
+
+    /* measurement: pt (point) */
+    /* 1 pt = 1.33 px */
+    /* width: 150pt; */
+
+    /* measurement: cm (centimeter) */
+    /* 1 cm = 37.8 px */
+    /* width: 5.30cm; */
+    background-color: red;
+
+    /* measurement: mm (millimeter) */
+    /* 1 mm = 3.78 px */
+    /* width: 53mm; */
+
+    /* measurement: in (inch) */
+    /* 1 in = 96 px */
+    /* width: 1.56in; */
+
+    /* responsive */
+    /* width: 50%; */
+
+    /* width in em = width in px / font-size in px */
+    /* 1em = 16px */
+    /* 200px / 16px = 12.5em */
+
+    width: 12.5rem;
 }
 
-/* overflow */
-
-.visible {
-    overflow: visible;
-}
-
-.hidden {
-    overflow: hidden;
-}
-
-.scroll {
-    overflow: scroll;
-}
-
-.auto {
-    overflow: auto;
-}
