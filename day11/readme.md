@@ -47,7 +47,7 @@ sticky:
 **Contents:**
 
 [x] overflow - hidden, scroll, auto, visible
-[] measurements  
+[x] measurements  
 [] fonts  
 [] icons  
 [] media query
