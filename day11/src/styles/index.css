@@ -1,47 +1,32 @@
 /* basic styling */
-.container {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    background-color: cadetblue;
+.box {
+    border: 3px dotted red;
+    width: 200px;
+    height: 100px;
 }
 
-.child {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+div {
+    margin: 200px 0px;
 }
 
-.child1 {
-    background-color: lightcoral;
+body > div:first-child {
+    margin: 0px;
 }
 
-.child2 {
-    background-color: lightgreen;
+/* overflow */
+
+.visible {
+    overflow: visible;
 }
 
-.child3 {
-    background-color: lightblue;
+.hidden {
+    overflow: hidden;
 }
 
-/*  position styling */
-
-.container {
-    position: relative;
+.scroll {
+    overflow: scroll;
 }
 
-.child1 {
-    position: absolute;
-    top: 300px;
-}
-
-.child2 {
-    position: relative;
-    top: 30px;
-}
-
-.child3 {
-    position: relative;
-    top: 30px;
-    /* background-color: inherit; */
+.auto {
+    overflow: auto;
 }
