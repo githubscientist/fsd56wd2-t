@@ -1,0 +1,45 @@
+/* basic styling */
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: cadetblue;
+}
+
+.child {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.child1 {
+    background-color: lightcoral;
+}
+
+.child2 {
+    background-color: lightgreen;
+}
+
+.child3 {
+    background-color: lightblue;
+}
+
+/*  position styling */
+
+.container {
+    
+}
+
+.child1 {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+
+.child2 {
+
+}
+
+.child3 {
+
+}
