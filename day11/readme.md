@@ -4,7 +4,35 @@
 
 [x] position property: fixed, static, relative, absolute, sticky
 
-fixed: fixed position with respect to the viewport. It does not move when the page is scrolled.
+static:
+
+- default, no special positioning
+- elements are positioned according to the normal flow of the document
+- top, right, bottom, left properties have no effect
+
+relative:
+
+- positioned relative to its normal position
+- top, right, bottom, left properties can be used to move the element from its normal position
+- other content will not be adjusted to fit into any gap left by the element
+
+absolute:
+
+- positioned relative to the document body
+- top, right, bottom, left properties can be used to position the element
+- other content will be adjusted to fit into any gap left by the element treating it as if it were not there
+
+fixed:
+
+- positioned relative to the viewport
+- top, right, bottom, left properties can be used to position the element
+- other content will be adjusted to fit into any gap left by the element treating it as if it were not there
+
+sticky:
+
+- positioned based on the user's scroll position
+- top, right, bottom, left properties can be used to position the element
+- other content will be adjusted to fit into any gap left by the element treating it as if it were not there
 
 [x] parent inherit
 [x] gradient

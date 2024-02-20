@@ -27,19 +27,21 @@
 /*  position styling */
 
 .container {
-    
+    position: relative;
 }
 
 .child1 {
-    position: relative;
-    bottom: 20px;
-    right: 20px;
+    position: absolute;
+    top: 300px;
 }
 
 .child2 {
-
+    position: relative;
+    top: 30px;
 }
 
 .child3 {
-
+    position: relative;
+    top: 30px;
+    /* background-color: inherit; */
 }
