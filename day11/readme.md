@@ -48,7 +48,7 @@ sticky:
 
 [x] overflow - hidden, scroll, auto, visible
 [x] measurements  
-[] fonts  
-[] icons  
+[x] fonts  
+[x] icons  
 [] media query
 [] dropbox
