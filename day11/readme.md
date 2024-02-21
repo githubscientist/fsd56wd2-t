@@ -1,54 +1,33 @@
-### HTML & CSS- Day -3: HTML & CSS
-
-**Contents:**
-
-[x] position property: fixed, static, relative, absolute, sticky
-
-static:
-
-- default, no special positioning
-- elements are positioned according to the normal flow of the document
-- top, right, bottom, left properties have no effect
-
-relative:
-
-- positioned relative to its normal position
-- top, right, bottom, left properties can be used to move the element from its normal position
-- other content will not be adjusted to fit into any gap left by the element
-
-absolute:
-
-- positioned relative to the document body
-- top, right, bottom, left properties can be used to position the element
-- other content will be adjusted to fit into any gap left by the element treating it as if it were not there
-
-fixed:
-
-- positioned relative to the viewport
-- top, right, bottom, left properties can be used to position the element
-- other content will be adjusted to fit into any gap left by the element treating it as if it were not there
-
-sticky:
-
-- positioned based on the user's scroll position
-- top, right, bottom, left properties can be used to position the element
-- other content will be adjusted to fit into any gap left by the element treating it as if it were not there
-
-[x] parent inherit
-[x] gradient
-
-**Doubts:**
-
-[x] flex - justify content, align items
-[x] grid - grid template areas
-
 ### Day -4: HTML & CSS
 
 **Contents:**
 
-[x] overflow - hidden, scroll, auto, visible
-[x] measurements  
-[x] fonts  
-[x] icons  
-[] media query
+[] media query  
 [] dropbox
+
+**Doubts:**
+
+[] form get and post
+
+### Day -5: HTML & CSS
+
+**Contents:**
+
+[] What is RWD?  
+[] What is the mobile-first approach?  
+[] Bootstrap
+
+- How to set up bootstrap?
+- What is the layout?
+- what is container, container-fluid & container with breakpoints?
+- What is a grid in Bootstrap?
+- what is a column prefix & its use and maximum columns for a row?
+- how to do nested columns and column ordering?
+
+Pre-read:
+https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
+From the below Title, you can pick any two and complete them with responsive design.
+
+For your reference visit this URL
+https://github.com/rvsp/HTML-CSS/tree/master/Tasks
