@@ -6,7 +6,7 @@
         <title>Document</title>
     </head>
     <body>
-        <form method="get">
+        <form method="get" action="./pages/success.html">
             <input 
                 type="email"
                 name="email"
@@ -25,6 +25,26 @@
 
     <!-- 
         http://127.0.0.1:3000/day11/src/index.html?email=sathish%40gmail.com&password=123456
-
      -->
+
+     <!-- 
+
+        form method get vs post
+
+        get: 
+            - data is appended to the url
+            - data is visible to the user
+            - data is limited to 2048 characters
+            - data is not secure
+            - data is cached by the browser
+            - data is not encrypted
+        
+        post:
+
+            - data is not appended to the url
+            - data is not visible to the user
+            - data is not limited to 2048 characters
+            - data is secure
+            - data is not cached by the browser
+            - data is encrypted
 </html>
