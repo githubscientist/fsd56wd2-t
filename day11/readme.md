@@ -23,12 +23,13 @@ Mobile-first is a design strategy that involves creating styles for the smallest
 
 [] Bootstrap
 
-- How to set up bootstrap?
-- What is the layout?
-- what is container, container-fluid & container with breakpoints?
-- What is a grid in Bootstrap?
-- what is a column prefix & its use and maximum columns for a row?
-- how to do nested columns and column ordering?
+[x] How to set up bootstrap?
+
+[] What is the layout?
+[] what is container, container-fluid & container with breakpoints?
+[] What is a grid in Bootstrap?
+[] what is a column prefix & its use and maximum columns for a row?
+[] how to do nested columns and column ordering?
 
 Pre-read:
 https://getbootstrap.com/docs/4.6/getting-started/introduction/
