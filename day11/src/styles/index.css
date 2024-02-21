@@ -1,0 +1,70 @@
+/* mobile first */
+/* The styles are applied to the entire application for the mobile view */
+
+.menuIcon {
+    font-size: 48px;
+}
+
+.menuList {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* styles for the desktop view */
+/* The styles are applied to the entire application for the desktop view */
+@media (min-width: 768px) {
+    .menuIcon {
+        display: none;
+    }
+
+    .menuList {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .menuList > li {
+        list-style: none;
+        margin: 0 2px;
+        padding: 10px 20px;
+    }
+
+    .menuList a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .menuList li:hover {
+        background-color:cadetblue;
+    }
+
+    /* for submenus */
+    .menuList li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .subMenuList {
+        margin-top: 10px;
+    }
+
+    .menuList li .subMenuList {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menuList li:hover .subMenuList {
+        display: block;
+    }
+
+    .subMenuList li {
+        display: block;
+        padding: 10px 20px;
+    }
+}

@@ -2,19 +2,25 @@
 
 **Contents:**
 
-[] media query  
+[x] media query  
 [] dropbox
 
 **Doubts:**
 
-[] form get and post
+[x] form get and post
 
 ### Day -5: HTML & CSS
 
 **Contents:**
 
-[] What is RWD?  
-[] What is the mobile-first approach?  
+[x] What is RWD?
+
+Resonsive Web Design is the approach that suggests that design and development should respond to the user’s behavior and environment based on screen size, platform, and orientation. The practice consists of a mix of flexible grids and layouts, images, and an intelligent use of CSS media queries.
+
+[x] What is the mobile-first approach?
+
+Mobile-first is a design strategy that involves creating styles for the smallest screen first and then using media queries to add styles as the screen grows. This approach is the opposite of the traditional approach of creating styles for a desktop screen and then using media queries to add styles as the screen shrinks.
+
 [] Bootstrap
 
 - How to set up bootstrap?
