@@ -5,12 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bootstrap</title>
         <link rel="stylesheet" href="../assets/bootstrap-5.3.3-dist/css/bootstrap.css">
+        <style>
+            .bgColor {
+                background-color: #EBDFFF;
+            }
+        </style>
     </head>
     <body>
-        <div class="container-fluid border bg-info min-vh-100">
-            This is a container
-        </div>
+        <div class="container-fluid border border-1 border-secondary">
+            <div class="row" style="min-height: 40px;">
+                <div class="col border border-1 border-secondary d-flex justify-content-center align-items-center bgColor">
+                    Column 1
+                </div>
 
+                <div class="col border border-1 border-secondary d-flex justify-content-center align-items-center bgColor">
+                    Column 2
+                </div>
+
+                <div class="col border border-1 border-secondary d-flex justify-content-center align-items-center bgColor">
+                    Column 3
+                </div>
+            </div>
+        </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"></script>
