@@ -7,7 +7,7 @@
 
 **Contents:**
 
-[] dropbox
+[x] dropbox
 
 [x] How to set up bootstrap?
 [x] What is the layout?
