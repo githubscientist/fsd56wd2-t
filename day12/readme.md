@@ -1,9 +1,13 @@
 ### Day -5: HTML & CSS
 
+**Doubts:**
+
+[] Blog Page - with NAV + FLEX + GRID for entire page layout  
+[] Bootstrap icons
+
 **Contents:**
 
-[] dropbox  
-[] Bootstrap
+[] dropbox
 
 [x] How to set up bootstrap?
 [] What is the layout?
