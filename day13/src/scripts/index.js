@@ -1,4 +1,6 @@
-const header = document.createElement('div');
+const header = document.querySelectorAll('.header');
+
+console.log(header);
 
 const h1 = document.createElement('h1');
 h1.textContent = 'Hello, World!';
@@ -14,8 +16,7 @@ link.textContent = 'click me!';
 link.setAttribute('href', 'https://www.google.com');
 link.setAttribute('target', '_blank');
 
-header.append(h1, link);
-document.body.appendChild(header);
+header[1].append(h1, link);
 
-header.setAttribute('class', 'header');
+header[1].setAttribute('class', 'header');
 link.setAttribute('class', 'link');

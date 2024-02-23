@@ -13,8 +13,8 @@
 
 [x] createElement,
 [x] setAttribute
-[] getElementById,
-[] querySelector vs querySelectorAll
+[x] getElementById,
+[x] querySelector vs querySelectorAll
 [x] innerHTML vs innerText
 
 innerText: It sets or returns the text content of the specified node, and all its descendants.
