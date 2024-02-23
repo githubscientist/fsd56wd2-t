@@ -15,7 +15,12 @@
 [] setAttribute
 [] getElementById,
 [] querySelector vs querySelectorAll
-[] innerHTML vs innerText
+[x] innerHTML vs innerText
+
+innerText: It sets or returns the text content of the specified node, and all its descendants.
+
+innerHTML: It sets or returns the HTML content of the specified element.
+
 [x] appendChild vs append
 
 **Pre-read:**  
