@@ -10,8 +10,7 @@ const paragraph = document.createElement('p');
 paragraph.innerText = 'The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.';
 
 // append h1 and paragraph to the div
-header.appendChild(h1);
-header.appendChild(paragraph);
+header.append(h1, paragraph);
 
 // append the div to the body
 document.body.appendChild(header);
