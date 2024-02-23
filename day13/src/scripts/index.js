@@ -1,20 +1,21 @@
-const menu = ['coffee', 'tea', 'sandwich', 'cake', 'cookie', 'rice', 'noodles', 'soup', 'salad', 'soda'];
-
 const header = document.createElement('div');
 
 const h1 = document.createElement('h1');
-h1.textContent = 'Coffee Shop';
+h1.textContent = 'Hello, World!';
 
-const p = document.createElement('p');
-p.textContent = 'Our Coffee Shop is the best in town. We serve the best and a delicious menu.';
+const span = document.createElement('span');
+span.textContent = ' Welcome!';
 
-const ul = document.createElement('ul');
+h1.appendChild(span);
 
-for (let i = 0; i < menu.length; i++){
-    const item = document.createElement('li');
-    item.textContent = menu[i];
-    ul.appendChild(item);
-}
+const link = document.createElement('a');
+link.textContent = 'click me!';
 
-header.append(h1, p, ul);
+link.setAttribute('href', 'https://www.google.com');
+link.setAttribute('target', '_blank');
+
+header.append(h1, link);
 document.body.appendChild(header);
+
+header.setAttribute('class', 'header');
+link.setAttribute('class', 'link');

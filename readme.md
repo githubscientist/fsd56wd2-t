@@ -25,3 +25,13 @@ innerHTML: It sets or returns the HTML content of the specified element.
 
 **Pre-read:**  
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+innerText:
+
+- sets or returns the visible text contained in a node, and all its descendants.
+- will preserve the line breaks and spaces from the beginning and end of the text.
+
+textContent:
+
+- sets or returns the text content regardless of styling in a node and its descendants.
+- will remove the line breaks and spaces from the beginning and end of the text.
