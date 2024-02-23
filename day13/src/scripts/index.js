@@ -1,14 +1,20 @@
-// create a div element
+const menu = ['coffee', 'tea', 'sandwich', 'cake', 'cookie', 'rice', 'noodles', 'soup', 'salad', 'soda'];
+
 const header = document.createElement('div');
 
-headerElements = `<h1>DOM-DEMO</h1>`;
+const h1 = document.createElement('h1');
+h1.textContent = 'Coffee Shop';
 
-headerElements += `
-<p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.</p>`;
+const p = document.createElement('p');
+p.textContent = 'Our Coffee Shop is the best in town. We serve the best and a delicious menu.';
 
+const ul = document.createElement('ul');
 
-header.innerHTML = headerElements;
+for (let i = 0; i < menu.length; i++){
+    const item = document.createElement('li');
+    item.textContent = menu[i];
+    ul.appendChild(item);
+}
 
-// append the div to the body
+header.append(h1, p, ul);
 document.body.appendChild(header);
-
