@@ -14,7 +14,7 @@ Day -2: Document vs Window
 [x] Window - Common Util functions  
 [x] setTimeout vs setInterval  
 [x] prompt, Alert, Confirm  
-[] working with events
+[x] working with events
 
 Pre-read:
 https://stackoverflow.com/questions/9895202/what-is-the-difference-between-window-screen-and-document-in-javascript
