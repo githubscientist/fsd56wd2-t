@@ -1,26 +1,17 @@
-// function sayHello() {
-//     console.log('Hello, world!');
+// let name = prompt('your name?');
+
+// if (name) {
+//     console.log(`Hello ${name}!`);
 // }
 
-// let helloInterval = setInterval(sayHello, 1000);
+// alert('Hello world!');
 
+// let result = confirm('Are you sure?');
 
-
-// setTimeout(() => {
-//     clearInterval(helloInterval);
-// }, 5000);
-
-let timer = 10;
-
-function countDown() {
-    console.log(timer);
-    timer--;
-}
-
-let countDownInterval = setInterval(countDown, 1000);
-
-
-
-setTimeout(() => {
-    clearInterval(countDownInterval);
-}, 10000);
+// if (result) {
+//     // clicked OK
+//     console.log('You clicked OK');
+// } else {
+//     // clicked Cancel
+//     console.log('You clicked Cancel');
+// }

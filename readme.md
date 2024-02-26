@@ -13,7 +13,7 @@ Day -2: Document vs Window
 
 [x] Window - Common Util functions  
 [x] setTimeout vs setInterval  
-[] prompt, Alert, Confirm  
+[x] prompt, Alert, Confirm  
 [] working with events
 
 Pre-read:
