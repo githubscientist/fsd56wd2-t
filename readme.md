@@ -3,7 +3,7 @@
 [] Blog Page - with NAV + FLEX + GRID for entire page layout  
 [x] Bootstrap icons - survey form star icon -- task
 [x] append vs appendChild  
-[] change the placeholder color
+[x] change the placeholder color
 [] innerText vs innerHTML
 
 Day -2: Document vs Window
