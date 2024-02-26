@@ -1,7 +1,26 @@
-let notification = document.getElementById('notification');
+// function sayHello() {
+//     console.log('Hello, world!');
+// }
 
-let hideNotification = function () {
-    notification.style.display = 'none';
+// let helloInterval = setInterval(sayHello, 1000);
+
+
+
+// setTimeout(() => {
+//     clearInterval(helloInterval);
+// }, 5000);
+
+let timer = 10;
+
+function countDown() {
+    console.log(timer);
+    timer--;
 }
 
-setTimeout(hideNotification, 10000);
+let countDownInterval = setInterval(countDown, 1000);
+
+
+
+setTimeout(() => {
+    clearInterval(countDownInterval);
+}, 10000);
