@@ -1,17 +1,7 @@
-// let name = prompt('your name?');
+let registerButton = document.getElementById('registerButton');
 
-// if (name) {
-//     console.log(`Hello ${name}!`);
-// }
+let handleRegisterButtonClick = () => {
+    console.log('Register button clicked');
+}
 
-// alert('Hello world!');
-
-// let result = confirm('Are you sure?');
-
-// if (result) {
-//     // clicked OK
-//     console.log('You clicked OK');
-// } else {
-//     // clicked Cancel
-//     console.log('You clicked Cancel');
-// }
+registerButton.addEventListener('dblclick', handleRegisterButtonClick);
