@@ -4,6 +4,7 @@
 [x] Bootstrap icons - survey form star icon -- task
 [x] append vs appendChild  
 [] change the placeholder color
+[] innerText vs innerHTML
 
 Day -2: Document vs Window
 
