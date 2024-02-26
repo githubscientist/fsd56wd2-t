@@ -1,9 +1,4 @@
-// let header = document.getElementById('header');
+let title = document.createElement('title');
+title.textContent = 'Day 14';
 
-// console.log(header.innerText);
-
-let firstParagraph = document.querySelector('#firstPara');
-
-console.log(firstParagraph.innerText);
-
-console.log(firstParagraph.innerHTML);
+document.head.appendChild(title);
