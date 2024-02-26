@@ -2,7 +2,7 @@
 
 [] Blog Page - with NAV + FLEX + GRID for entire page layout  
 [x] Bootstrap icons - survey form star icon -- task
-[] append vs appendChild  
+[x] append vs appendChild  
 [] change the placeholder color
 
 Day -2: Document vs Window
