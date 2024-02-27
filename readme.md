@@ -1,20 +1,4 @@
 **Doubts:**
 
 [] Blog Page - with NAV + FLEX + GRID for entire page layout  
-[x] Bootstrap icons - survey form star icon -- task
-[x] append vs appendChild  
-[x] change the placeholder color
-[x] innerText vs innerHTML
-[x] head DOM
-
-Day -2: Document vs Window
-
-**Contents:**
-
-[x] Window - Common Util functions  
-[x] setTimeout vs setInterval  
-[x] prompt, Alert, Confirm  
-[x] working with events
-
-Pre-read:
-https://stackoverflow.com/questions/9895202/what-is-the-difference-between-window-screen-and-document-in-javascript
+[] Github Profile Page
