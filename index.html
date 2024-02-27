@@ -3,26 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>setTimeout vs setInterval</title>
+        <title>Twitter Inspired Character Counter</title>
         <link rel="stylesheet" href="./day15/src/styles/index.css">
-
-        <style>
-            #registerButton {
-                padding: 10px 20px;
-                border: none;
-            }
-        </style>
     </head>
     <body>
-        
-        <input 
-            type="button"
-            value="Register"
-            id="registerButton"
-            class="registerButton"
-        />
-
-        <p>Price: <span id="oldPrice">Rs. 5000</span> Rs.4999 only</p>
+        <div class="counterContainer">
+            <h2>Twitter Inspired Character Counter</h2>
+            
+            <textarea
+                rows="5"
+                cols="50"
+                id="tweet"
+            ></textarea>
+            
+            <p>You inserted characters: &nbsp; <span id="charCount">0</span></p>
+        </div>
 
         <!-- external javascript -->
         <script src="./day15/src/scripts/index.js"></script>

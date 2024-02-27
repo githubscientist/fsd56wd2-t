@@ -1,0 +1,31 @@
+body {
+    background-color: #E6ECEF;
+}
+
+h2, p {
+    color: #29A6EB;
+}
+
+p {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.counterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+#tweet {
+    border-radius: 10px;
+    border-color: #29A6EB;
+    padding: 30px;
+}
+
+#tweet:focus {
+    border-color: #29A6EB;
+    outline: none;
+}
