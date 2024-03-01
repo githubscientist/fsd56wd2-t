@@ -1,80 +1,61 @@
-/*
-    fetch API -> modern way to make HTTP requests rather than using XMLHttpRequest (XHR)
-*/
-let fetchCountries = () => {
-    fetch('https://restcountries.com/v3.1/all')
-        .then((response) => {
-            return response.json();
-        })
-        .catch(() => {
-            console.log('Data fetching failed');
-        })
-        .then((countries) => {
-            let container = document.querySelector('.container');
+let pages = [
+    {
+        "id": "1",
+        "name": "Lura Senger",
+        "email": "Xander_Collier@yahoo.com"
+    },
+    {
+        "id": "2",
+        "name": "Wilburn Weber",
+        "email": "Bennett_Kreiger11@yahoo.com"
+    },
+    {
+        "id": "3",
+        "name": "Tyrique Hahn",
+        "email": "Juston.Altenwerth@yahoo.com"
+    },
+    {
+        "id": "4",
+        "name": "Lenny Bailey",
+        "email": "Guiseppe_Hegmann@yahoo.com"
+    },
+    {
+        "id": "5",
+        "name": "Vladimir Keeling",
+        "email": "Louisa_Walsh18@hotmail.com"
+    }
+];
 
-            let table = document.createElement('table');
+let pagination = document.querySelector('.pagination');
 
-            table.setAttribute('cellpadding', '10');
-            table.classList.add('table');
+let currentPage = 1;
 
-            let headRow = document.createElement('tr');
+pages.forEach(page => {
+    let pageLink = document.createElement('a');
+    pageLink.href = `#${page.id}`;
+    pageLink.textContent = `${page.id}`;
 
-            let firstHead = document.createElement('th');
-            firstHead.textContent = 'Name';
+    pageLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentPage = Number(page.id);
+        console.log(currentPage);
 
-            let secondHead = document.createElement('th');
-            secondHead.textContent = 'Capital';
+        // set the active class
+        pageLink.classList.add('active');
 
-            let thirdHead = document.createElement('th');
-            thirdHead.textContent = 'Region';
+    });
 
-            let fourthHead = document.createElement('th');
-            fourthHead.textContent = 'Population';
+    pagination.appendChild(pageLink);
+});
 
-            let fifthHead = document.createElement('th');
-            fifthHead.textContent = 'Flag';
+let next = document.createElement('a');
+next.href = `#`;
+next.textContent = `Next`;
 
-            headRow.append(
-                firstHead,
-                secondHead,
-                thirdHead,
-                fourthHead, 
-                fifthHead
-            );
+next.addEventListener('click', (e) => {
+    e.preventDefault();
+    currentPage++;
+    console.log(currentPage);
+});
 
-            table.append(headRow);
-
-            countries.forEach(country => {
-                let row = document.createElement('tr');
-
-                let name = document.createElement('td');
-                name.textContent = country.name.common ? country.name.common : 'N/A';
-
-                let capital = document.createElement('td');
-                if (country.capital) {
-                    capital.textContent = country.capital[0];
-                } else {
-                    capital.textContent = 'N/A';
-                }
-
-                let region = document.createElement('td');
-                region.textContent = country.region;
-
-                let population = document.createElement('td');
-                population.textContent = country.population;
-
-                let flag = document.createElement('td');
-                flag.innerHTML = `<img src="${country.flags.png}" alt="${country.name.common}" width="50px" height="50px">`;
-
-                row.append(
-                    name, capital, region, population, flag
-                )
-                
-                table.appendChild(row);
-
-            })
-            container.append(table);
-        })
-};
-
-fetchCountries();
+pagination.appendChild(next);
