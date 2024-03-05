@@ -6,5 +6,5 @@
 
 **Contents:**
 
-[] Promise chaining  
+[x] Promise chaining  
 [] Async/Await with error handling
