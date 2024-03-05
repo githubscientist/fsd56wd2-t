@@ -2,6 +2,8 @@ async function fetchWeather(city) {
 
     let weatherResults = document.getElementById('weatherResults');
 
+    weatherResults.innerHTML = '';
+
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9b3abd72af5e8ee4c215adb53b59b0e5`);
     
     let weather = await response.json();
