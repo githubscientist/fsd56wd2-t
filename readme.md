@@ -1,4 +1,19 @@
-**Doubts:**
+CRUD with HTML, CSS, JS
 
-[x] Async/Await with error handling
-[x] classlist and innerHTML
+CRUD
+C - Create
+R - Read
+U - Update
+D - Delete
+
+users - create, read, update, delete
+posts - create, read, update, delete
+comments - create, read, update, delete
+
+Types of Requests:
+
+GET - Read
+POST - Create
+PUT - Update
+PATCH - Partial Update
+DELETE - Delete
