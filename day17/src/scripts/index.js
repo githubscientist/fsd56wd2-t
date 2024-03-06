@@ -9,6 +9,8 @@ let todos = ['Buy milk', 'Send postcard', 'Pay bills', 'Call mom'];
 
 let todoList = document.createElement('ul');
 
+todoList.style.listStyleType = 'none';
+
 
 
 // todos.forEach(todo => {
@@ -20,7 +22,7 @@ let todoList = document.createElement('ul');
 let todoHTML = '';
 
 todos.forEach(todo => {
-    todoHTML += `<li>${todo}</li>`;
+    todoHTML += `<li><input type='checkbox' class='form-check-input' /> ${todo}</li>`;
 });
 
 todoList.innerHTML = todoHTML;
