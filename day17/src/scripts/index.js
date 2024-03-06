@@ -1,47 +1,39 @@
-// Async/Await with error handling
-/*
-    Problem:
+let description = document.getElementById('description');
 
-    Get all the comments of the post with id 1 posted by the user with id 1.
+description.classList.add('show', 'bg-green', 'text-white', 'p-3', 'm-3');
+
+description.classList.remove('bg-green');
+description.classList.add('bg-red');
+
+let todos = ['Buy milk', 'Send postcard', 'Pay bills', 'Call mom'];
+
+let todoList = document.createElement('ul');
+
+
+
+// todos.forEach(todo => {
+//     let li = document.createElement('li');
+//     li.textContent = todo;
+//     todoList.appendChild(li);
+// })
+
+let todoHTML = '';
+
+todos.forEach(todo => {
+    todoHTML += `<li>${todo}</li>`;
+});
+
+todoList.innerHTML = todoHTML;
+
+console.log(todoList);
+
+/*
+    todoHTML = ''
+
+    Iteration #1 todoHTML = '<li>Buy milk</li>'
+    Iteration #2 todoHTML = '<li>Buy milk</li><li>Send postcard</li>'
+    Iteration #3 todoHTML = '<li>Buy milk</li><li>Send postcard</li><li>Pay bills</li>'
+    Iteration #4 todoHTML = '<li>Buy milk</li><li>Send postcard</li><li>Pay bills</li><li>Call mom</li>'
 */
 
-/*
-    get all the users               https://jsonplaceholder.typicode.com/users/
-        * Get the first user details
-       
-    get all the posts               https://jsonplaceholder.typicode.com/posts
-        * Get the first post posted by the user with id 1
-       
-    get all the comments             https://jsonplaceholder.typicode.com/comments
-        * Get all the comments of the post with id 1
-*/
-
-function fetchComments() {
-    fetch('https://jsonplaceholder.typicode.com/users/')
-    .then(response => response.json())
-    .catch(error => console.error('error fetching users:', error))
-    .then(users => {
-        // return the first user details
-        return users[0];
-    })
-    .then(user => {
-        // get all the posts posted by the user
-        return fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
-    })
-    .then(response => response.json())
-    .catch(error => console.error('error fetching posts:', error))
-    .then(posts => {
-        return posts[0];
-    })
-    .then(post => {
-        // get all the comments of this post
-        return fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`);
-    })
-    .then(response => response.json())
-    .catch(error => console.error('error fetching comments:', error))
-    .then(comments => {
-        console.log(comments);
-    })
-}
-
-fetchComments();
+document.body.appendChild(todoList);

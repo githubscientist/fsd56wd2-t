@@ -1,4 +1,4 @@
 **Doubts:**
 
 [x] Async/Await with error handling
-[] classlist and innerHTML
+[x] classlist and innerHTML
