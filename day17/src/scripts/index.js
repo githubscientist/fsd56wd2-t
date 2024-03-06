@@ -1,59 +1,47 @@
-async function fetchWeather(city) {
+// Async/Await with error handling
+/*
+    Problem:
 
-    let weatherResults = document.getElementById('weatherResults');
+    Get all the comments of the post with id 1 posted by the user with id 1.
+*/
 
-    weatherResults.innerHTML = '';
+/*
+    get all the users               https://jsonplaceholder.typicode.com/users/
+        * Get the first user details
+       
+    get all the posts               https://jsonplaceholder.typicode.com/posts
+        * Get the first post posted by the user with id 1
+       
+    get all the comments             https://jsonplaceholder.typicode.com/comments
+        * Get all the comments of the post with id 1
+*/
 
-    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9b3abd72af5e8ee4c215adb53b59b0e5`);
-    
-    let weather = await response.json();
-
-    let location = document.getElementById('location');
-    location.innerHTML = `Results for <strong>${weather.name}, ${weather.sys.country}</strong>`;
-
-    let weatherIconCol = document.createElement('div');
-    weatherIconCol.classList.add('col');
-    weatherIconCol.classList.add('d-flex');
-    weatherIconCol.classList.add('align-items-center');
-    weatherIconCol.classList.add('justify-content-center');
-    let weatherIcon = document.createElement('img');
-    weatherIcon.src = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
-
-    weatherIconCol.appendChild(weatherIcon);
-    
-
-    let temp = document.createElement('h1');
-    temp.style.fontSize = '3rem';
-    temp.classList.add('d-inline')
-    temp.innerHTML = `${Math.floor(weather.main.temp - 273.15)}<span class="text-muted fs-6">°C</span>`;
-    weatherIconCol.appendChild(temp);
-    weatherResults.appendChild(weatherIconCol);
-
-    let descCol = document.createElement('div');
-    descCol.classList.add('col');
-    let desc = document.createElement('p');
-    desc.innerHTML = `Pressure: ${weather.main.pressure} hPa <br> Humidity: ${weather.main.humidity}% <br> Wind: ${weather.wind.speed} m/s`;
-
-    descCol.appendChild(desc);
-    weatherResults.appendChild(descCol);
-
-
-    let timestamp = new Date().toLocaleDateString('en-US', {
-        weekday: 'long',
-        hour: 'numeric',
-        minute: '2-digit'
-    });
-    let timeCol = document.createElement('div');
-    timeCol.classList.add('col');
-    let time = document.createElement('p');
-    time.innerHTML = `<h2>Weather</h2>${timestamp}<br>${weather.weather[0].description[0].toUpperCase()+weather.weather[0].description.slice(1, )}`;
-
-    timeCol.appendChild(time);
-    weatherResults.appendChild(timeCol);
+function fetchComments() {
+    fetch('https://jsonplaceholder.typicode.com/users/')
+    .then(response => response.json())
+    .catch(error => console.error('error fetching users:', error))
+    .then(users => {
+        // return the first user details
+        return users[0];
+    })
+    .then(user => {
+        // get all the posts posted by the user
+        return fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
+    })
+    .then(response => response.json())
+    .catch(error => console.error('error fetching posts:', error))
+    .then(posts => {
+        return posts[0];
+    })
+    .then(post => {
+        // get all the comments of this post
+        return fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`);
+    })
+    .then(response => response.json())
+    .catch(error => console.error('error fetching comments:', error))
+    .then(comments => {
+        console.log(comments);
+    })
 }
 
-function getWeather(e) {
-    e.preventDefault();
-    let city = e.target.elements.city.value;
-    fetchWeather(city);
-}
+fetchComments();
