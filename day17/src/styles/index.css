@@ -5,23 +5,3 @@
 .hide {
     display: none;
 }
-
-.bg-green {
-    background-color: green;
-}
-
-.bg-red {
-    background-color: red;
-}
-
-.text-green {
-    color: green;
-}
-
-.text-red {
-    color: red;
-}
-
-.text-white {
-    color: white;
-}
