@@ -13,7 +13,7 @@ async function createNewUser(name, username, email) {
 
     if (response.ok) {
         let data = await response.json();
-        console.log('User created successfully');
+        alert('User created successfully');
         console.log(data);
     }
 }

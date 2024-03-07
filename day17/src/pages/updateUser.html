@@ -36,8 +36,13 @@
 
         <div class="row">
             <div class="col">
-                <h3>Create a New User</h3>
-                <form id="createUserForm">
+                <h3>Update User</h3>
+
+                <select id="userIDs">
+                    <option disabled selected>Select ID</option>
+                </select>
+
+                <form id="updateUserForm">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -50,14 +55,14 @@
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Create User</button>
+                    <button type="submit" class="btn btn-primary">Update User</button>
                 </form>
             </div>
         </div>
     </div>
 
     <!-- external javascript -->
-    <script src="../scripts/createUser.js"></script>
+    <script src="../scripts/updateUser.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
