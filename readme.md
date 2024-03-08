@@ -1,19 +1,20 @@
-CRUD with HTML, CSS, JS
+### React- Day -1: ES5 vs ES6
 
-CRUD
-C - Create
-R - Read
-U - Update
-D - Delete
+**Contents:**
 
-users - create, read, update, delete
-posts - create, read, update, delete
-comments - create, read, update, delete
+[] ES5 vs Es6  
+[] Scoping - var vs let vs const  
+[] arrow functions  
+[] use of this keyword(lexical scoping)  
+[] template literals  
+[] spred & rest prarameter  
+[] array & object destructure  
+[] property shorthand  
+[] module import & export  
+[] Class in Javascript
 
-Types of Requests:
+Pre-read:
 
-GET - Read
-POST - Create
-PUT - Update
-PATCH - Partial Update
-DELETE - Delete
+http://es6-features.org/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
